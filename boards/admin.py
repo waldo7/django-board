@@ -6,6 +6,7 @@ from .models import Board
 
 class BoardAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'description')
+    list_display_links = ('id', 'name', 'description', )
 
 
 admin.site.register(Board, BoardAdmin)
